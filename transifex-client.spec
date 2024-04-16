@@ -34,7 +34,7 @@ Patch:          0001-Remove-autoupdate-feature.patch
 %go_generate_buildrequires
 
 %build
-%gobuild -o %{gobuilddir}/bin/tx %{goipath}/cmd/tx
+%gobuild -o %{gobuilddir}/bin/tx %{goipath}
 
 %install
 install -m 0755 -vd                     %{buildroot}%{_bindir}
